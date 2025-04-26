@@ -78,7 +78,7 @@ class CourseClass:
         con=con=sqlite3.connect(database="rms.db")
         cur=con.cursor()
         try:
-            cur.execute(f"select * from course where name LIKE '%{self.var_search.get()}%'")
+            cur.execute(f"select * from course where name LIKE '%{self.var_search.get()}% '")
             rows=cur.fetchall()
             self.CourseTable.delete(*self.CourseTable.get_children())
             for row in rows:
