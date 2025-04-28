@@ -116,16 +116,17 @@ class Register:
                 else:
                     cur.execute("INSERT INTO employee (fname, lname, contact, email, question, answer, password) VALUES (?, ?, ?, ?, ?, ?, ?)",
                                 (self.var_fname.get(),
-                                 self.var_lname.get(),
-                                 self.var_contact.get(),
-                                 self.var_email.get(),
-                                 self.cmb_quest.get(),
-                                 self.var_answer.get(),
-                                 self.var_password.get()))
+                                self.var_lname.get(),
+                                self.var_contact.get(),
+                                self.var_email.get(),
+                                self.cmb_quest.get(),
+                                self.var_answer.get(),
+                                self.var_password.get()))
                     con.commit()
                     con.close()
                     messagebox.showinfo("Success", "Register Successful", parent=self.root)
                     self.clear()
+                    self.login_window()  # THIS WILL NOW OPEN LOGIN WINDOW
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to: {str(es)}", parent=self.root)
 

@@ -3,6 +3,8 @@ from PIL import Image,ImageTk  #pip install pillow
 from course import CourseClass
 from student import studentClass
 from result import resultClass
+from tkinter import messagebox
+import os
 
 class RMS:
     def __init__(self,root):
@@ -22,8 +24,8 @@ class RMS:
         btn_student=Button(M_Frame,text="Student",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.add_student).place(x=240,y=5,width=200,height=40)
         btn_result=Button(M_Frame,text="Result",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.add_result).place(x=460,y=5,width=200,height=40)
         btn_view=Button(M_Frame,text="View Student Results",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=680,y=5,width=200,height=40)
-        btn_logout=Button(M_Frame,text="Logout",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=900,y=5,width=200,height=40)
-        btn_exit=Button(M_Frame,text="Exit",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=1120,y=5,width=200,height=40)
+        btn_logout=Button(M_Frame,text="Logout",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.logout).place(x=900,y=5,width=200,height=40)
+        btn_exit=Button(M_Frame,text="Exit",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.exit).place(x=1120,y=5,width=200,height=40)
 
         #===footer====
         footer=Label(self.root,text="SRMS-Student Result Management System\nContact us for any Technical Issue: 987*****01", font=("goudy old style",12),bg="#262626",fg="white").pack(side=BOTTOM,fill=X)
@@ -58,6 +60,21 @@ class RMS:
         self.new_win=Toplevel(self.root)
         self.new_obj=resultClass(self.new_win)
 
+    # def add_repory(self):
+    #     self.new_win=Toplevel(self.root)
+    #     self.new_obj=resultClass(self.new_win)
+
+    def logout(self):
+        op=messagebox.askyesno("Confirm","Do you really want to logout?", parent=self.root)
+        if op==True:
+            self.root.destroy()
+            os.system("python login.py")
+
+    def exit(self):
+        op=messagebox.askyesno("Confirm","Do you really want to Exit?", parent=self.root)
+        if op==True:
+            self.root.destroy()
+            
 if __name__=="__main__":
     root=Tk()
     obj=RMS(root)
