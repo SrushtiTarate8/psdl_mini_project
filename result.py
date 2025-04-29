@@ -115,15 +115,6 @@ class resultClass:
         self.var_course.set(""),
         self.var_marks.set(""),
         self.var_full_marks.set(""),
-                        
-
-
-
-
-
-       
-
-
 
 
 if __name__=="__main__":
