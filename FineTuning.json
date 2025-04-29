@@ -1,0 +1,171 @@
+[
+    {
+        "input": "What is a Stack in Data Structures?",
+        "output": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle. Elements are inserted (push) and removed (pop) from only one end, called the top of the stack."
+    },
+    {
+        "input": "Explain ACID properties in DBMS.",
+        "output": "ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable transaction processing in a database."
+    },
+    {
+        "input": "What is a Deadlock in Operating Systems?",
+        "output": "A deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process."
+    },
+    {
+        "input": "Define TCP in Computer Networks.",
+        "output": "TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable data transfer between devices over a network."
+    },
+
+    {
+        "input": "What is a Queue? Explain its types.",
+        "output": "A queue is a linear data structure that follows the First In First Out (FIFO) principle. Types include simple queue, circular queue, priority queue, and double-ended queue (deque)."
+    },
+    {
+        "input": "What are B-Trees used for?",
+        "output": "B-Trees are self-balancing search trees designed for systems that read and write large blocks of data, like databases and file systems."
+    },
+    {
+        "input": "What is normalization in DBMS?",
+        "output": "Normalization is the process of organizing data in a database to avoid redundancy and ensure data integrity. It involves decomposing a table into smaller tables without losing data."
+    },
+    {
+        "input": "Explain 3-Tier Architecture in DBMS.",
+        "output": "The 3-Tier Architecture includes the Presentation Tier (user interface), Application Tier (business logic), and Data Tier (database). It separates concerns to allow better scalability and maintainability."
+    },
+    {
+        "input": "What is the difference between process and thread?",
+        "output": "A process is an independent program in execution, while a thread is the smallest unit of execution within a process. Threads share the same memory space; processes do not."
+    },
+    {
+        "input": "What is Paging in OS?",
+        "output": "Paging is a memory management scheme that eliminates the need for contiguous memory allocation. Physical memory is divided into fixed-size blocks called frames and logical memory into blocks of the same size called pages."
+    },
+    {
+        "input": "What is DNS?",
+        "output": "DNS (Domain Name System) translates human-friendly domain names like www.example.com into IP addresses that computers use to identify each other on the network."
+    },
+    {
+        "input": "Explain OSI Model in Computer Networks.",
+        "output": "The OSI model is a conceptual framework used to understand network interactions in seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application."
+    },
+    {
+        "input": "What is a data structure?",
+        "output": "A data structure is a way of organizing and storing data so that operations like access, insertion, deletion, and updating can be performed efficiently."
+      },
+      {
+        "input": "What is the difference between an array and a linked list?",
+        "output": "An array stores elements in contiguous memory locations and supports direct access. A linked list stores elements (nodes) that contain data and a reference to the next node, allowing dynamic memory allocation."
+      },
+      {
+        "input": "What is a stack?",
+        "output": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle. Insertion and deletion happen from only one end called the top."
+      },
+      {
+        "input": "What are real-life examples of a stack?",
+        "output": "Examples include a pile of plates, undo feature in editors, and browser history."
+      },
+      {
+        "input": "What operations are performed on a stack?",
+        "output": "The main operations are push (add element), pop (remove element), peek (view top element), and isEmpty (check if stack is empty)."
+      },
+      {
+        "input": "What is a queue?",
+        "output": "A queue is a linear data structure that follows the First In First Out (FIFO) principle. Elements are inserted at the rear and removed from the front."
+      },
+      {
+        "input": "What are types of queues?",
+        "output": "Types of queues include simple queue, circular queue, priority queue, and double-ended queue (deque)."
+      },
+      {
+        "input": "What is a linked list?",
+        "output": "A linked list is a linear data structure where each element is a node containing data and a reference (link) to the next node."
+      },
+      {
+        "input": "What are types of linked lists?",
+        "output": "Types of linked lists are singly linked list, doubly linked list, and circular linked list."
+      },
+      {
+        "input": "What is a binary tree?",
+        "output": "A binary tree is a tree data structure where each node has at most two children, referred to as the left child and the right child."
+      },
+      {
+        "input": "What is a binary search tree (BST)?",
+        "output": "A binary search tree is a binary tree where for each node, values in the left subtree are smaller and values in the right subtree are larger."
+      },
+      {
+        "input": "What is tree traversal?",
+        "output": "Tree traversal refers to visiting all nodes of a tree systematically. Common traversals are inorder, preorder, and postorder."
+      },
+      {
+        "input": "What is the difference between BFS and DFS?",
+        "output": "Breadth-First Search (BFS) explores neighbors level by level, using a queue. Depth-First Search (DFS) explores as far as possible along a branch before backtracking, using a stack or recursion."
+      },
+      {
+        "input": "What is a graph?",
+        "output": "A graph is a collection of vertices (nodes) and edges (connections between nodes). It can be directed or undirected."
+      },
+      {
+        "input": "What is an adjacency matrix?",
+        "output": "An adjacency matrix is a 2D array used to represent a graph, where each cell (i,j) indicates if there is an edge between vertex i and vertex j."
+      },
+      {
+        "input": "What is an adjacency list?",
+        "output": "An adjacency list represents a graph as a collection of lists, where each vertex has a list of connected vertices."
+      },
+      {
+        "input": "What is hashing?",
+        "output": "Hashing is the process of mapping data to a fixed-size value (hash) using a hash function. It is used for fast data retrieval."
+      },
+      {
+        "input": "What is a hash table?",
+        "output": "A hash table is a data structure that stores key-value pairs and uses hashing to calculate an index into an array of buckets."
+      },
+      {
+        "input": "What is collision in hashing?",
+        "output": "A collision occurs when two keys hash to the same index. Techniques like chaining and open addressing are used to handle collisions."
+      },
+      {
+        "input": "What is a heap?",
+        "output": "A heap is a complete binary tree that satisfies the heap property: in a max heap, parent nodes are greater than child nodes; in a min heap, parent nodes are smaller."
+      },
+      {
+        "input": "What is a priority queue?",
+        "output": "A priority queue is a special queue where each element has a priority, and elements are served based on priority, not just order of insertion."
+      },
+      {
+        "input": "What is a trie?",
+        "output": "A trie is a tree-like data structure used to store strings efficiently, especially useful for prefix-based searching like autocomplete."
+      },
+      {
+        "input": "What is dynamic programming?",
+        "output": "Dynamic programming is an optimization technique where subproblems are solved and stored to avoid recomputation."
+      },
+      {
+        "input": "What is memoization?",
+        "output": "Memoization is a technique of storing the results of expensive function calls and returning the cached result when the same inputs occur again."
+      },
+      {
+        "input": "What is recursion?",
+        "output": "Recursion is a process where a function calls itself directly or indirectly to solve a problem."
+      },
+      {
+        "input": "What is time complexity?",
+        "output": "Time complexity measures the amount of time an algorithm takes as a function of the input size."
+      },
+      {
+        "input": "What is space complexity?",
+        "output": "Space complexity measures the amount of memory space an algorithm uses relative to the input size."
+      },
+      {
+        "input": "What is Big O notation?",
+        "output": "Big O notation describes the worst-case time or space complexity of an algorithm, helping to analyze its performance."
+      },
+      {
+        "input": "What is the time complexity of searching in a binary search tree?",
+        "output": "The average time complexity is O(log n), but in the worst case (unbalanced tree) it can be O(n)."
+      },
+      {
+        "input": "What is the time complexity of binary search on a sorted array?",
+        "output": "The time complexity is O(log n) because the array is divided by 2 at each step."
+      }    
+]

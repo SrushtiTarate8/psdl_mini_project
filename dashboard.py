@@ -30,7 +30,7 @@ class RMS:
         btn_exit=Button(M_Frame,text="Exit",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.exit).place(x=1120,y=5,width=200,height=40)
 
         self.lbl_course=Label(self.root,text="Total Courses\n[ 0 ]",font=("goudy old style",20),bd=10,relief=RIDGE,bg="#e43b06",fg="white")
-                
+
         self.lbl_course.place(x=400,y=530,width=300,height=100)
         
         self.lbl_student=Label(self.root,text="Total Courses\n[ 0 ]",font=("goudy old style",20),bd=10,relief=RIDGE,bg="#0676ad",fg="white")
@@ -65,6 +65,7 @@ class RMS:
             
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to {str(ex)}")
+            
 
 
         #===content_window===

@@ -63,6 +63,10 @@ class resultClass:
 
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to {str(ex)}")
+    
+    def show(self):
+    # placeholder for display logic
+     print("Result has been added and can be displayed.")
 
 #=================
     def search(self):
